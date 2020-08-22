@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,600,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,600,700');
+
+html {
+    font-family: 'Josefin Sans', serif;
+}
+
+body {
+    -webkit-text-size-adjust:none;
+    -moz-text-size-adjust:none;
+    -ms-text-size-adjust:none;
+    -webkit-text-size-adjust:100%;
+    -moz-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
+
+.App{
+  text-align: center;
+}
+
+@media (min-width: 30em) {
+  .App{
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}
+
+.headerContainer{
+  display: inline-block;
+}
+
+.header{
+  font-family: 'Josefin Slab', serif;
+  font-size: 8em; 
+  /* font-weight: 300; Neveikia kažkodėl */
+}
+
+.sub-header{
+  text-align: right;
+  margin-top: -2.1em;
+  padding-right: 0.2em;
+  font-size: 1em;
+}
+
+.contentTitle{
+  font-size: 2.5em;
+  font-weight: 600;
+  font-variant: small-caps;
+  padding-top: 0.5em;
+}
+
+.contentType{
+  font-family: 'Josefin Slab', serif;
+  font-size: 1em;
+  /* font-weight: 100; */
+  font-style: italic;
+  padding-bottom: 0.5em;
+}
+
+@media (min-width: 30em) {
+  .contentType{
+    font-size: 1em;
+    /* font-weight: 100; */
+  }
+}
+
+.contentBody{
+  font-size: 1.2em;
+  margin-top: -3vw;
+  text-align: justify;
+  padding-left:  1%;
+  padding-right: 1%;
+}
+
+@media (min-width: 30em) {
+  .contentBody{
+    font-size: 1.5em;
+    margin-top: -0.3em;
+    padding-left:  5%;
+    padding-right: 5%;
+  }
+}
+
+nav{
+  display: none;
+}
+
+@media (min-width: 30em) {
+  nav{
+    display: block;
+    width: 100%;
+  }
+
+  .nav{
+    list-style-type: none;
+    margin: 0;
+      padding: 0;
+      margin-bottom: 0.5em;
+  }
+
+  .nav li{
+      display: inline;
+  }
+
+  .link {
+    transition: color 0.5s ease;
+    transition: background-color 0.5s ease;
+    color:#000;
+    text-decoration: none;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    padding: 0.0em 0.3em 0.1em 0.3em;
+    /* top right bottom left*/
+    margin: 0 0.05em 0 0.05em;
+  }
+
+  .link:hover{
+    transition: color 0.5s ease;
+    background-color: #fff;
+    color: #d00;
+  }
+}
+
+.weblink{
+  text-decoration: none;
+  color: #080;
+}
+
+.weblink:hover{
+  color:#0f0;
+  transition: color 0.5s ease;
+}
+
+.list{
+  list-style-type: none;
+}
+
+.item{
+  background-size: cover;
+  background-position: center center;
+  background-color: whitesmoke;
+
+  --squareSize: 75vw;
+  width: var(--squareSize);
+  height: var(--squareSize);
+  margin: 1vw auto;
+  margin: 5vw 10vw;
+}
+
+.squareGrid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 35em) {
+  .item{
+    --squareSize: 42vw;
+    width: var(--squareSize);
+    height: var(--squareSize);
+    margin: 1vw 1vw;
+  }
+}
+
+@media (min-width: 50em) {
+  .item{
+    --squareSize: 24vw;
+    width: var(--squareSize);
+    height: var(--squareSize);
+  }
+}
+
+@media (min-width: 60em) {
+  .item{
+    --squareSize: 29vw;
+    width: var(--squareSize);
+    height: var(--squareSize);
+  }
+}
+
+@media (min-width: 75em) {
+  .item{
+    --squareSize: 27vw;
+    width: var(--squareSize);
+    height: var(--squareSize);
+  }
+}
+
+@media (min-width: 80em) {
+  .item{
+    --squareSize: 24vw;
+    width: var(--squareSize);
+    height: var(--squareSize);
+  }
+}
+
+@media (min-width: 88em) {
+  .item{
+    --squareSize: 20vw;
+    width: var(--squareSize);
+    height: var(--squareSize);
+  }
+}
+
+@media (min-width: 106em) {
+  .item{
+    --squareSize: 18vw;
+    width: var(--squareSize);
+    height: var(--squareSize);
+  }
+}
+
+.item:after, .item:before {
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.item:before {
+    font-size: 2em;
+    content: attr(data-content);
+    color:#fff;
+    z-index:1;
+    text-align:center;
+    background:black;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+
+.item:hover:after, .item:hover:before {
+  opacity:1;
+}
+
+a {
+    text-decoration: none;
+}

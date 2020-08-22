@@ -1,0 +1,75 @@
+sub{
+  /*font-weight: 100;*/
+  font-size: 1.5vw;
+}
+
+@media (min-width: 750px) {
+  sub{
+    font-size: 0.65em;
+  }
+}
+
+sup{
+  /*font-weight: 100;*/
+  font-size: 0.6em;
+  font-style: italic;
+}
+
+@media (min-width: 750px) {
+  sup{
+    font-size: 0.65em;
+  }
+}
+
+.subheader{
+  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-variant: small-caps;
+}
+
+@media (min-width: 750px) {
+  .subheader{
+    font-size: 1.5em;
+  }
+}
+
+.caption{
+  font-weight: 100;
+  font-size: 1em;
+  font-style: italic;
+  text-align: center;
+  display: block;
+  margin-top: -0.2vw;
+}
+
+@media (min-width: 750px) {
+  .caption{
+    font-size: 0.65em;
+    margin-top: -0.2em;
+  }
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.semibold{
+  font-weight: 600;
+}
+
+.light{
+  font-weight: 300;
+}
+
+.thin{
+  font-weight: 100;
+}
+
+.gif, .image{
+  width: 100%;
+}
