@@ -1,7 +1,7 @@
 # theamazingtom.com
- My website.
+ [Live Demo](http://theamazingtom.com/)
  
- Pretty crappy code, first try with react in 2017
+ Pretty crappy code, first try with react in 2017.
  Didn't want to spend money or set up a database so its using custom file structure as database.
 
 Build For Publishing
